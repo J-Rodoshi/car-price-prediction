@@ -30,7 +30,7 @@ The model looks at patterns in the data — like how age, mileage, engine power,
 
 The project follows a complete machine learning workflow:
 
-```text
+
 Used-Car Dataset
        ↓
 Data Inspection
@@ -60,7 +60,7 @@ Dash Web Application
 Price Prediction
 ---
 
-## 📊 The Dataset
+##  📊The Dataset
 
 The dataset (`Cars.csv`) contains the following information for each car:
 
@@ -102,6 +102,7 @@ Several models were compared. The results (on the test set) are:
 
 ---
 
+
 ## 💻 How to Run the Web Application
 
 ### Option 1: Run Locally (without Docker)
@@ -109,18 +110,24 @@ Several models were compared. The results (on the test set) are:
 **Requirements:** Python 3.8+ installed on your computer.
 
 1. **Download or clone this repository**  
-git clone https://github.com/J-Rodoshi/car-price-prediction.git
-cd car-price-prediction
+   ```bash
+   git clone https://github.com/J-Rodoshi/car-price-prediction.git
+   cd car-price-prediction
+   ```
 
 2. **Install required packages**  
-Open a terminal in the project folder and run:
-pip install -r app/requirements.txt
+   Open a terminal in the project folder and run:
+   ```bash
+   pip install -r app/requirements.txt
+   ```
 
 3. **Run the app**  
-python app/code/app.py
+   ```bash
+   python app/code/app.py
+   ```
 
 4. **Open your browser** and go to:  
-`http://127.0.0.1:8050`
+   `http://127.0.0.1:8050`
 
 You’ll see a form where you can enter a car’s details and click **"Generate estimate"**.
 
@@ -130,19 +137,22 @@ You’ll see a form where you can enter a car’s details and click **"Generate 
 
 If you have Docker installed, the app can be started without installing Python packages manually.
 
-1. **Navigate to the project root** (where `docker-compose.yaml` is).
+1. **Navigate to the project root** (where `docker-compose.yaml` is located).
 
 2. **Start the container**:
-docker compose up --build
+   ```bash
+   docker compose up --build
+   ```
 
 3. **Open your browser** and go to `http://localhost:8050`.
 
 ---
 
+
 ## 📁 Repository Structure
 The repository is organised as follows:
 
-```text
+
 car-price-prediction/
 │
 ├── A1.ipynb
@@ -164,8 +174,10 @@ car-price-prediction/
 │
 └── README.md
 
+---
 
-🛠️ Technologies Used
+
+## 🛠️ Technologies Used
 
 The project was developed using:
 
@@ -180,6 +192,8 @@ Joblib — model serialization
 Dash — web application
 Docker — application containerization
 Jupyter Notebook — analysis and experimentation
+
+---
 
 
 ## 🧑‍💻 For Developers – Reproducing the Notebook
@@ -203,6 +217,7 @@ This project is created for educational purposes as part of a machine learning a
 Feel free to use and modify it.
 
 ---
+
 
 ## 🙏 Acknowledgements
 
