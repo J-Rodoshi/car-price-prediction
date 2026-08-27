@@ -1,0 +1,23 @@
+# Virtual environment
+venv/
+.venv/
+
+# Environment files
+.env
+.env.*
+
+# Ignore all pickle files except the trained models
+*.pkl
+!app/code/xgb_car_price_model.pkl
+!app/code/scaler.pkl
+!app/code/model_columns.pkl
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
