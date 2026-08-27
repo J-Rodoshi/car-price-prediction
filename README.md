@@ -26,38 +26,24 @@ The model looks at patterns in the data — like how age, mileage, engine power,
 
 ---
 
-# 🧠 How It Works
 
-The project follows a complete machine learning workflow:
+## 🧠 How It Works
 
+The project follows these steps:
 
-Used-Car Dataset
-       ↓
-Data Inspection
-       ↓
-Data Cleaning
-       ↓
-Exploratory Data Analysis
-       ↓
-Feature Selection & Encoding
-       ↓
-Train-Test Split
-       ↓
-Missing Value Imputation
-       ↓
-Feature Scaling
-       ↓
-Model Training
-       ↓
-Model Comparison
-       ↓
-XGBoost Selection
-       ↓
-Model Saving
-       ↓
-Dash Web Application
-       ↓
-Price Prediction
+1. Load the used-car dataset.
+2. Inspect and clean the data.
+3. Perform exploratory data analysis.
+4. Select and encode features.
+5. Split the data into training and test sets.
+6. Handle missing values.
+7. Scale the features.
+8. Train several machine learning models.
+9. Compare model performance.
+10. Select XGBoost as the best model.
+11. Save the model and preprocessing objects.
+12. Build a Dash web application for real-time predictions.
+
 ---
 
 ##  📊The Dataset
@@ -155,24 +141,22 @@ The repository is organised as follows:
 
 car-price-prediction/
 │
-├── A1.ipynb
+├── A1.ipynb                  # Jupyter notebook (full ML workflow)
+├── A1.pdf                    # PDF export of the notebook
+├── Cars.csv                  # Dataset
+├── README.md                 # This file
+├── docker-compose.yaml       # Docker Compose configuration
 │
-├── Cars.csv
-│
-├── app/
-│   ├── code/
-│   │   ├── app.py
-│   │   ├── xgb_car_price_model.pkl
-│   │   ├── scaler.pkl
-│   │   └── model_columns.pkl
-│   │
-│   ├── requirements.txt
-│   ├── Dockerfile
-│   └── ...
-│
-├── docker-compose.yaml
-│
-└── README.md
+└── app/
+    ├── Dockerfile            # Docker image definition
+    ├── requirements.txt      # Python dependencies
+    └── code/                 # Application source code
+        ├── app.py            # Dash web app
+        ├── assets/
+        │   └── style.css     # Custom styling
+        ├── xgb_car_price_model.pkl   # Trained XGBoost model
+        ├── scaler.pkl        # Feature scaler
+        └── model_columns.pkl # Column order after encoding
 
 ---
 
